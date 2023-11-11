@@ -1,0 +1,30 @@
+---
+const title = "Ecomm-App";
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Automatizá la emisión de facturas y la gestión del inventario, optimizá tus publicaciones y respondé rápido las consultas."
+    />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png+xml" href="/favicon.png" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+<style is:global>
+  :root {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  html {
+    font-family: "Poppins", sans-serif;
+    background: #fff;
+  }
+</style>

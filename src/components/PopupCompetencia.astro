@@ -1,0 +1,80 @@
+---
+---
+
+<section class="popup-competencia d-none">
+  <img src="./../src/assets/imgs/img-compet.svg" alt="..." />
+  <p>
+    <span class="mobile-none">Prueba gratis el</span><strong>
+      <a href="./competencia.html"> Analizador de competencia </a>
+    </strong>
+    <span class="mobile-none">de Mercado Libre</span>
+  </p>
+</section>
+
+<style>
+  .mobile-none {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .mobile-none {
+    display: inline;
+  }
+}
+  .popup-competencia {
+    background-color: #b0cbff;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    z-index: 5;
+    width: 100%;
+    top: 86px;
+    height: 55px;
+    transition: all 0.2s linear;
+  }
+  @media screen and (min-width: 1024px) {
+    .popup-competencia {
+      gap: 15px;
+      top: 100px;
+      padding-top: 3px;
+    }
+  }
+  .popup-competencia:hover {
+    background-color: #88b1ff;
+  }
+  .popup-competencia:hover > p {
+    color: #fff;
+    transition: all 0.2s linear;
+  }
+  .popup-competencia:hover > p > strong > a {
+    color: #fff;
+    transition: all 0.2s linear;
+  }
+  .popup-competencia img {
+    width: 70px;
+  }
+  .popup-competencia p {
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    color: #304b7f;
+    margin:0;
+  }
+  @media screen and (min-width: 1024px) {
+    .popup-competencia p {
+      font-size: 20px;
+    }
+  }
+  .popup-competencia p a {
+    text-decoration: none;
+    color: #405789;
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .main-competencia {
+      background-color: #eaf1fe;
+    }
+  }
+</style>
